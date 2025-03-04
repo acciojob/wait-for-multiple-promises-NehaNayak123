@@ -1,7 +1,13 @@
     const loading=document.getElementById("loading");
 //your JS code here. If required.
+// function createPromise(index) {
+//     const time = (Math.random() * 2 + 1).toFixed(3);
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve({ index, time }), time * 1000);
+//     });
+// }
 function createPromise(index) {
-    const time = (Math.random() * 2 + 1).toFixed(3);
+    const time = (Math.random() * 1 + 1).toFixed(3); // adjust the maximum time to 2 seconds
     return new Promise(resolve => {
         setTimeout(() => resolve({ index, time }), time * 1000);
     });
